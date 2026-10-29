@@ -4,7 +4,7 @@
 (() => {
   const $ = (id) => document.getElementById(id);
   const COLORS = ["#247c9b", "#42836e", "#c7854d", "#8d6a9f", "#b45b60"];
-  const PAGE_NAMES = {overview: "项目概览", playground: "场景回放", method: "方法解剖", evidence: "实验与证据", reproduce: "复现与维护"};
+  const PAGE_NAMES = {overview: "论文主页", playground: "交互演示", method: "方法框架", evidence: "实验结果", reproduce: "代码与复现"};
   const state = {run: null, frame: 0, selected: 0, playing: false, lastTime: 0, elapsed: 0, manifest: null, legacy: null, pilot: null, imported: false, requestVersion: 0, datasetPath: "builtin"};
   const number = (v, digits = 2) => Number.isFinite(v) ? (Math.abs(v) > 1e5 || (v !== 0 && Math.abs(v) < .001) ? v.toExponential(2) : v.toFixed(digits)) : "未记录";
   const finite = (x) => typeof x === "number" && Number.isFinite(x);
@@ -26,7 +26,7 @@
       if (active) link.setAttribute("aria-current", "page"); else link.removeAttribute("aria-current");
     });
     $("breadcrumb-name").textContent = PAGE_NAMES[page];
-    document.title = PAGE_NAMES[page] + " · AA-MAPPO 研究工作台";
+    document.title = PAGE_NAMES[page] + " · AA-MAPPO 论文项目";
     window.scrollTo(0, 0);
     if (page !== "playground") stop();
   }

@@ -104,7 +104,7 @@ python scripts/check_site.py
 aamappo/                 维护版算法、环境与CLI
 configs/                 参数与来源说明
 site/                    纯静态研究交互平台，可由GitHub Pages托管
-docs/                    方法、实验、复现、局限、面试与维护文档
+docs/                    方法、实验、复现、局限与维护文档
 tests/                   科学计算与数据转换回归检查
 scripts/                 本地预览、历史数据导入与发布前检查
 artifacts/legacy/        原始日志/权重与校验清单
