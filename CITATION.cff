@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the paper for the method and identify the software commit/version used."
+title: "AA-MAPPO Research Studio and Maintained Reference Implementation"
+type: software
+authors:
+  - family-names: Gu
+    given-names: Jiayi
+version: 0.2.0
+date-released: 2026-10-29
+url: "https://github.com/gjy1024/AA-MAPPO"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: Gu
+      given-names: Jiayi
+  title: "UAV Swarm Path Planning Based on Attention Mechanism and Reinforcement Learning in 6G Networks"
+  collection-title: "2026 IEEE 4th International Conference on Control, Electronics and Computer Technology (ICCECT)"
+  year: 2026
+  start: 147
+  end: 153
+  doi: "10.1109/ICCECT68671.2026.11565262"

@@ -1,0 +1,171 @@
+{
+  "source_label": "AA-MAPPO_Project",
+  "status": "supplied-original",
+  "files": [
+    {
+      "path": "AA-MAPPO/__init__.py",
+      "sha256": "43dba7970f4dfd3b5eedb37563e885aed1942738b72a7961bb1ed0a4e0f87c32"
+    },
+    {
+      "path": "AA-MAPPO/algorithms/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "AA-MAPPO/algorithms/algorithm/__init__.py",
+      "sha256": "3ea69111e2ec303e965d59f8f7407c0d0d6a5283be4a9756f955bb083742cd63"
+    },
+    {
+      "path": "AA-MAPPO/algorithms/algorithm/r_actor_critic.py",
+      "sha256": "d674cedbab1f33ee4e29a6c70075f8d061a43fc961f637a08abe960de99340a0"
+    },
+    {
+      "path": "AA-MAPPO/algorithms/algorithm/r_mappo.py",
+      "sha256": "90ef98664bab0b37db6b17ebfd174f2688c9155537679bbe0047b2f1440cfe9a"
+    },
+    {
+      "path": "AA-MAPPO/algorithms/algorithm/rMAPPOPolicy.py",
+      "sha256": "9884861d5f2114d69acc11ad19e4d55be4447b4ef3f93569555b42855486473f"
+    },
+    {
+      "path": "AA-MAPPO/algorithms/utils/act.py",
+      "sha256": "a27f8b956034d2945fa1568eeb77e6764fa641c7f8263790ff58ebae72cf5880"
+    },
+    {
+      "path": "AA-MAPPO/algorithms/utils/cnn.py",
+      "sha256": "410e28dc1977daefc9571207173f6b54caacefae2f9e9a59dc32a6bd7f213b36"
+    },
+    {
+      "path": "AA-MAPPO/algorithms/utils/distributions.py",
+      "sha256": "6dcddae9b48c35899eb65ba76f17832213853e689b5dc1a2cced53c6da04d4a8"
+    },
+    {
+      "path": "AA-MAPPO/algorithms/utils/mlp.py",
+      "sha256": "9bd03434acec55d9757a237d0370f78a0d1e0f5bf2c1c89a2419a16f893f57f8"
+    },
+    {
+      "path": "AA-MAPPO/algorithms/utils/popart.py",
+      "sha256": "2d660f927cb51d598ae734847cb38ffd3af82f31aa548fa8ce8cb7cf53ff3cc0"
+    },
+    {
+      "path": "AA-MAPPO/algorithms/utils/rnn.py",
+      "sha256": "8a5f7bc2a9263d4ebd3234e877ee305c5caae24987d39e1155fc3fe35e089eaf"
+    },
+    {
+      "path": "AA-MAPPO/algorithms/utils/util.py",
+      "sha256": "d8092ea236f1dcee054c7795ae3b2a6df98521c243ea93468cb9e4f6b2dcdefd"
+    },
+    {
+      "path": "AA-MAPPO/config.py",
+      "sha256": "855af60fdc0f0be554c408caf0e130665dbda7682c3a8301db030c7970bd09e0"
+    },
+    {
+      "path": "AA-MAPPO/envs/__init__.py",
+      "sha256": "15c2ffe5d6790738d28363cf7101f64d7b6370a182b805284fbbbd304e6b42a1"
+    },
+    {
+      "path": "AA-MAPPO/envs/env_continuous.py",
+      "sha256": "9ca75bed50820c0d1614203025ce7e912f43abde70b12c987a27865493c04481"
+    },
+    {
+      "path": "AA-MAPPO/envs/env_core.py",
+      "sha256": "1339de9a1b7e0bb001e0c7b869a33f2e7de692c737a0c0060847da2743a83185"
+    },
+    {
+      "path": "AA-MAPPO/envs/env_discrete.py",
+      "sha256": "f23feff2070e43f239c4e99bbc5997fa42b60a50da60f87a717e5bc0c5360371"
+    },
+    {
+      "path": "AA-MAPPO/envs/env_wrappers.py",
+      "sha256": "faebf27bcb519df7a712644c5c51be678d0ca75e12a1b860f6bd3e7a5c543fee"
+    },
+    {
+      "path": "AA-MAPPO/runner/separated/base_runner.py",
+      "sha256": "4b4eeeadb55d86a2fc7c8dde2f3a64db1fa5bbc180d1d8a4f9bd4674c971a7bc"
+    },
+    {
+      "path": "AA-MAPPO/runner/separated/env_runner.py",
+      "sha256": "7043c4ce9a6fd332e57c8c32e6bf1bf545d8c8d504485c1da8ce4a93b4c581ac"
+    },
+    {
+      "path": "AA-MAPPO/runner/shared/base_runner.py",
+      "sha256": "0af1d59f84c1362a02d3440f956d0c90a80d62dc96e0749f58cdd7f564733c7e"
+    },
+    {
+      "path": "AA-MAPPO/runner/shared/env_runner.py",
+      "sha256": "ddf00fd1b47f9861e2e107be20cec9c77925bc52e3dc05ba28a7bb8aa9d449e3"
+    },
+    {
+      "path": "AA-MAPPO/scripts/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "AA-MAPPO/scripts/render/render_mpe.py",
+      "sha256": "7c64e21a7517f8df986a12a7ef85b28f0981eb8b9921cdc2a3b43dd1b93116d7"
+    },
+    {
+      "path": "AA-MAPPO/train/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "AA-MAPPO/train/train.py",
+      "sha256": "dc6b7e718e1de5f783fa3dd721dd7047b1a0f701061a03d1409f2eb371349cb5"
+    },
+    {
+      "path": "AA-MAPPO/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "AA-MAPPO/utils/separated_buffer.py",
+      "sha256": "4f8d295b7d9311905436b6e75c17e3f60563a79d64adebeec1017960e232a9fa"
+    },
+    {
+      "path": "AA-MAPPO/utils/shared_buffer.py",
+      "sha256": "a26a89dbce05ccc6d33aa5345a59c1ffd91c03dda7c763ae7194da8ed6a0d570"
+    },
+    {
+      "path": "AA-MAPPO/utils/util.py",
+      "sha256": "84d36bb8c743d85119738f1d8e22190b72b33f4402c9d54323f6f0325909ddbf"
+    },
+    {
+      "path": "AA-MAPPO/utils/valuenorm.py",
+      "sha256": "df19f747f5845c337d1933ee1a092fa3c758f9ada38bfa3e32aa7d277ac845a2"
+    },
+    {
+      "path": "核心代码 Naive_Reward_MAPPO/env_core.py",
+      "sha256": "750a2d65a38174b0c36bcb4cbe529c9a424468c1a16fbc45a89be7fe8b3ad83d"
+    },
+    {
+      "path": "核心代码 Naive_Reward_MAPPO/mlp.py",
+      "sha256": "9bd03434acec55d9757a237d0370f78a0d1e0f5bf2c1c89a2419a16f893f57f8"
+    },
+    {
+      "path": "核心代码 No_Clip_MAPPO/env_core.py",
+      "sha256": "a2c4af3524673b4cf7e2a2656d62ad8eefee06e5f8dcaa7ab6631bc8ab2a9581"
+    },
+    {
+      "path": "核心代码 No_Clip_MAPPO/mlp.py",
+      "sha256": "9bd03434acec55d9757a237d0370f78a0d1e0f5bf2c1c89a2419a16f893f57f8"
+    },
+    {
+      "path": "核心代码_AA-MAPPO/env_core.py",
+      "sha256": "a2c4af3524673b4cf7e2a2656d62ad8eefee06e5f8dcaa7ab6631bc8ab2a9581"
+    },
+    {
+      "path": "核心代码_AA-MAPPO/env_core2.py",
+      "sha256": "1339de9a1b7e0bb001e0c7b869a33f2e7de692c737a0c0060847da2743a83185"
+    },
+    {
+      "path": "核心代码_AA-MAPPO/mlp.py",
+      "sha256": "9bd03434acec55d9757a237d0370f78a0d1e0f5bf2c1c89a2419a16f893f57f8"
+    },
+    {
+      "path": "核心代码_MAPPO/env_core.py",
+      "sha256": "1339de9a1b7e0bb001e0c7b869a33f2e7de692c737a0c0060847da2743a83185"
+    },
+    {
+      "path": "核心代码_MAPPO/mlp.py",
+      "sha256": "7258d586e21578a2cc13fdadde83fc387f6576c7deb92453c4c1d9ce875db472"
+    }
+  ],
+  "note": "Byte hashes identify supplied files; this is not a claim that they generated every historical run."
+}

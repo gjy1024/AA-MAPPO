@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "artifacts": [
+    {
+      "path": "artifacts/legacy/aa_mappo/models/actor_agent0.pt",
+      "sha256": "2c6bf692dea241ad6a6cbcfeb563f1f2ce664de4baee77ed2f871087687d5f37",
+      "bytes": 75908,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/6G_ISAC_Attention/run1/models/actor_agent0.pt"
+    },
+    {
+      "path": "artifacts/legacy/aa_mappo/models/actor_agent1.pt",
+      "sha256": "2796dc88394da4f5c38680eac5074ac87f536d43727e969173e112935a90f019",
+      "bytes": 75908,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/6G_ISAC_Attention/run1/models/actor_agent1.pt"
+    },
+    {
+      "path": "artifacts/legacy/aa_mappo/models/actor_agent2.pt",
+      "sha256": "b94bc436ae4183f7d63a2468d9a14f16265690187815d1b82d8c8779f8a73c29",
+      "bytes": 75908,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/6G_ISAC_Attention/run1/models/actor_agent2.pt"
+    },
+    {
+      "path": "artifacts/legacy/aa_mappo/models/critic_agent0.pt",
+      "sha256": "3db6941a666a0d41bc7987bb21946f8804a7100010c8b15f4da7626b73236795",
+      "bytes": 81618,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/6G_ISAC_Attention/run1/models/critic_agent0.pt"
+    },
+    {
+      "path": "artifacts/legacy/aa_mappo/models/critic_agent1.pt",
+      "sha256": "8ed11ffe4ebc546a700197ffcb1017f688cecfc1aadbfdfc6961218d6caa4006",
+      "bytes": 81618,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/6G_ISAC_Attention/run1/models/critic_agent1.pt"
+    },
+    {
+      "path": "artifacts/legacy/aa_mappo/models/critic_agent2.pt",
+      "sha256": "6f523348be895f372039a1289841561679f1613599b74c2b0a8b5e8a3ef90415",
+      "bytes": 81618,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/6G_ISAC_Attention/run1/models/critic_agent2.pt"
+    },
+    {
+      "path": "artifacts/legacy/aa_mappo/summary.raw.json",
+      "sha256": "173ebc3d6e40fd85c9f7f4fdadc6e8b98269bfafeae94828a17ced482ded23fe",
+      "bytes": 125033,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/6G_ISAC_Attention/run1/logs/summary.json"
+    },
+    {
+      "path": "artifacts/legacy/standard_mappo/models/actor_agent0.pt",
+      "sha256": "0de695200196648215614e9aefdc3ad4cb970042a8bad00e236c1843ea44ed7d",
+      "bytes": 8187,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Standard_MAPPO/run1/models/actor_agent0.pt"
+    },
+    {
+      "path": "artifacts/legacy/standard_mappo/models/actor_agent1.pt",
+      "sha256": "f2638b597484dc1e775ed2285eb13842d7df7c7346e0e75d4df959ff19ca96b8",
+      "bytes": 8187,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Standard_MAPPO/run1/models/actor_agent1.pt"
+    },
+    {
+      "path": "artifacts/legacy/standard_mappo/models/actor_agent2.pt",
+      "sha256": "3822adaa0392e9d55ff6a86d41e1cba3a418423ccb36c33ef05748f04b4445c0",
+      "bytes": 8187,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Standard_MAPPO/run1/models/actor_agent2.pt"
+    },
+    {
+      "path": "artifacts/legacy/standard_mappo/models/critic_agent0.pt",
+      "sha256": "a3e657147ad26b6cc218b0aecd3b1788a0aa759dc8a5613dc065a3ede5f65fff",
+      "bytes": 16004,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Standard_MAPPO/run1/models/critic_agent0.pt"
+    },
+    {
+      "path": "artifacts/legacy/standard_mappo/models/critic_agent1.pt",
+      "sha256": "d1fd59ab285a9ea274c974aa28f208ee4a52a5e9d57a1400f742682ea8f046d1",
+      "bytes": 16004,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Standard_MAPPO/run1/models/critic_agent1.pt"
+    },
+    {
+      "path": "artifacts/legacy/standard_mappo/models/critic_agent2.pt",
+      "sha256": "526b89dc2d9b57fca2d237d49427875b13fe0e9899db8535c0080976efe6a7d2",
+      "bytes": 16004,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Standard_MAPPO/run1/models/critic_agent2.pt"
+    },
+    {
+      "path": "artifacts/legacy/standard_mappo/summary.raw.json",
+      "sha256": "67c67e4fe34048c34af646169cd184a77de9d3c14d719725b61c74ede5e30229",
+      "bytes": 125115,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Standard_MAPPO/run1/logs/summary.json"
+    },
+    {
+      "path": "artifacts/legacy/no_clip_mappo/models/actor_agent0.pt",
+      "sha256": "8004c6dd99a3ce8c67b754aab5dc86aff59e67a2da7401bfcb3807bd531350ac",
+      "bytes": 77060,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/No_Clip_MAPPO/run1/models/actor_agent0.pt"
+    },
+    {
+      "path": "artifacts/legacy/no_clip_mappo/models/actor_agent1.pt",
+      "sha256": "b39abec4711b69fc4796215c98e016aad0ba1f279032a0401d7d305d800ad73f",
+      "bytes": 77060,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/No_Clip_MAPPO/run1/models/actor_agent1.pt"
+    },
+    {
+      "path": "artifacts/legacy/no_clip_mappo/models/actor_agent2.pt",
+      "sha256": "0895fda3cb16007a91b39a837e3d2f1ea452315e94ca4581389a1c78cf4c7946",
+      "bytes": 77060,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/No_Clip_MAPPO/run1/models/actor_agent2.pt"
+    },
+    {
+      "path": "artifacts/legacy/no_clip_mappo/models/critic_agent0.pt",
+      "sha256": "79c30d46bd3a743d431f4d0a89e0da359bb011990426babec329325af987bf04",
+      "bytes": 84818,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/No_Clip_MAPPO/run1/models/critic_agent0.pt"
+    },
+    {
+      "path": "artifacts/legacy/no_clip_mappo/models/critic_agent1.pt",
+      "sha256": "4e7a4214dc5e1448b97b3efff81acbee100ec970adff48669164ac0711019859",
+      "bytes": 84818,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/No_Clip_MAPPO/run1/models/critic_agent1.pt"
+    },
+    {
+      "path": "artifacts/legacy/no_clip_mappo/models/critic_agent2.pt",
+      "sha256": "5ad0cd8c0529731cd811bd65491ed59a306808a2a43641f234d5d124eacdd75e",
+      "bytes": 84818,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/No_Clip_MAPPO/run1/models/critic_agent2.pt"
+    },
+    {
+      "path": "artifacts/legacy/no_clip_mappo/summary.raw.json",
+      "sha256": "36f03f426d868175d2c67f6b7caf0a3f35a53b819d1a8ac4f538a3f7be7ec7df",
+      "bytes": 124501,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/No_Clip_MAPPO/run1/logs/summary.json"
+    },
+    {
+      "path": "artifacts/legacy/naive_reward/models/actor_agent0.pt",
+      "sha256": "957d072f35531b99300c2337409ed61b5e1684ef0537e9ccc37d0954d16ba33d",
+      "bytes": 77060,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Naive_Reward_MAPPO/run1/models/actor_agent0.pt"
+    },
+    {
+      "path": "artifacts/legacy/naive_reward/models/actor_agent1.pt",
+      "sha256": "6e64fb4e701765b94eeb24ad11dbb8d855326c94fb6cb20aab972f91b83f0128",
+      "bytes": 77060,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Naive_Reward_MAPPO/run1/models/actor_agent1.pt"
+    },
+    {
+      "path": "artifacts/legacy/naive_reward/models/actor_agent2.pt",
+      "sha256": "569bd621e31316f3a6ce969a2119f50cfa69d13cb95f5aa81b8e046f8c53fb1c",
+      "bytes": 77060,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Naive_Reward_MAPPO/run1/models/actor_agent2.pt"
+    },
+    {
+      "path": "artifacts/legacy/naive_reward/models/critic_agent0.pt",
+      "sha256": "db351c0bc2eb5a4a9910efbab619f3b594fb90a9fe11b39deae36466493445e3",
+      "bytes": 84818,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Naive_Reward_MAPPO/run1/models/critic_agent0.pt"
+    },
+    {
+      "path": "artifacts/legacy/naive_reward/models/critic_agent1.pt",
+      "sha256": "4951f6860ef11d3d6021d27610978fa251b20725ac702f3c8dc42cdaec9626ed",
+      "bytes": 84818,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Naive_Reward_MAPPO/run1/models/critic_agent1.pt"
+    },
+    {
+      "path": "artifacts/legacy/naive_reward/models/critic_agent2.pt",
+      "sha256": "5fc8d826d044416b73748d1db86113ec9109bb3c4a00e5e435f456f47e38e9bc",
+      "bytes": 84818,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Naive_Reward_MAPPO/run1/models/critic_agent2.pt"
+    },
+    {
+      "path": "artifacts/legacy/naive_reward/summary.raw.json",
+      "sha256": "9c4c1dbff402fadb5671eb81ba66bbcd6a97a9b9cfb8e8ebb53bbaed43e21ca0",
+      "bytes": 123758,
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/Naive_Reward_MAPPO/run1/logs/summary.json"
+    }
+  ]
+}

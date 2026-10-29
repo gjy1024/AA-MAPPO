@@ -1,0 +1,234 @@
+{
+  "baseline": {
+    "per_scenario": [
+      {
+        "evaluation_seed": 2001,
+        "collision_step_fraction": 0.205,
+        "boundary_step_fraction": 0.33,
+        "mean_collision_penalty": 10.25,
+        "mean_speed_cost": 0.09267818423323311,
+        "mean_communication": 0.5342015882304486,
+        "mean_sensing_proxy": 0.0005894803140866073,
+        "total_path_length_all_agents": 185.16324839697975
+      },
+      {
+        "evaluation_seed": 2002,
+        "collision_step_fraction": 0.0,
+        "boundary_step_fraction": 0.39,
+        "mean_collision_penalty": 0.0,
+        "mean_speed_cost": 0.10542792808042244,
+        "mean_communication": 0.7654909525302509,
+        "mean_sensing_proxy": 0.0008036585625139153,
+        "total_path_length_all_agents": 209.98975198960716
+      },
+      {
+        "evaluation_seed": 2003,
+        "collision_step_fraction": 0.0,
+        "boundary_step_fraction": 0.405,
+        "mean_collision_penalty": 0.0,
+        "mean_speed_cost": 0.10612959800955192,
+        "mean_communication": 0.8722548398020209,
+        "mean_sensing_proxy": 0.0021451187198277674,
+        "total_path_length_all_agents": 211.54902845145045
+      },
+      {
+        "evaluation_seed": 2004,
+        "collision_step_fraction": 0.0,
+        "boundary_step_fraction": 0.51,
+        "mean_collision_penalty": 0.0,
+        "mean_speed_cost": 0.10126374401213102,
+        "mean_communication": 0.6762044550811221,
+        "mean_sensing_proxy": 0.000720817158957338,
+        "total_path_length_all_agents": 202.0198459969506
+      },
+      {
+        "evaluation_seed": 2005,
+        "collision_step_fraction": 0.0,
+        "boundary_step_fraction": 0.59,
+        "mean_collision_penalty": 0.0,
+        "mean_speed_cost": 0.10488203481222508,
+        "mean_communication": 1.0640352476214716,
+        "mean_sensing_proxy": 0.002754087938623877,
+        "total_path_length_all_agents": 209.2141839092746
+      },
+      {
+        "evaluation_seed": 2006,
+        "collision_step_fraction": 0.0,
+        "boundary_step_fraction": 0.28,
+        "mean_collision_penalty": 0.0,
+        "mean_speed_cost": 0.09843122700535108,
+        "mean_communication": 0.7013992103459461,
+        "mean_sensing_proxy": 0.0011254980317798218,
+        "total_path_length_all_agents": 196.40721638621395
+      },
+      {
+        "evaluation_seed": 2007,
+        "collision_step_fraction": 0.075,
+        "boundary_step_fraction": 0.355,
+        "mean_collision_penalty": 3.75,
+        "mean_speed_cost": 0.10504181278382763,
+        "mean_communication": 0.8550886810116364,
+        "mean_sensing_proxy": 0.0023484072246363306,
+        "total_path_length_all_agents": 209.25628245230442
+      },
+      {
+        "evaluation_seed": 2008,
+        "collision_step_fraction": 0.0,
+        "boundary_step_fraction": 0.565,
+        "mean_collision_penalty": 0.0,
+        "mean_speed_cost": 0.10315965047089083,
+        "mean_communication": 0.6795431318784382,
+        "mean_sensing_proxy": 0.0013633093761949416,
+        "total_path_length_all_agents": 205.53629809350656
+      },
+      {
+        "evaluation_seed": 2009,
+        "collision_step_fraction": 0.005,
+        "boundary_step_fraction": 0.36,
+        "mean_collision_penalty": 0.25,
+        "mean_speed_cost": 0.09316510948778785,
+        "mean_communication": 0.7915277405994948,
+        "mean_sensing_proxy": 0.0016741706391572068,
+        "total_path_length_all_agents": 185.53713846156384
+      },
+      {
+        "evaluation_seed": 2010,
+        "collision_step_fraction": 0.01,
+        "boundary_step_fraction": 0.325,
+        "mean_collision_penalty": 0.5,
+        "mean_speed_cost": 0.09455439136742286,
+        "mean_communication": 0.7954355939764768,
+        "mean_sensing_proxy": 0.0015377735385924407,
+        "total_path_length_all_agents": 188.35417366839016
+      }
+    ],
+    "means": {
+      "collision_step_fraction": 0.0295,
+      "boundary_step_fraction": 0.4109999999999999,
+      "mean_collision_penalty": 1.475,
+      "mean_speed_cost": 0.1004733680262844,
+      "mean_communication": 0.7735181441077307,
+      "mean_sensing_proxy": 0.0015062321504370247,
+      "total_path_length_all_agents": 200.30271678062417
+    }
+  },
+  "candidate": {
+    "per_scenario": [
+      {
+        "evaluation_seed": 2001,
+        "collision_step_fraction": 0.0,
+        "boundary_step_fraction": 0.435,
+        "mean_collision_penalty": 0.0,
+        "mean_speed_cost": 0.09215510929825164,
+        "mean_communication": 0.5131380975208804,
+        "mean_sensing_proxy": 0.00046233468342260676,
+        "total_path_length_all_agents": 183.841015735606
+      },
+      {
+        "evaluation_seed": 2002,
+        "collision_step_fraction": 0.205,
+        "boundary_step_fraction": 0.41,
+        "mean_collision_penalty": 10.25,
+        "mean_speed_cost": 0.11616977727739373,
+        "mean_communication": 0.9259631800588966,
+        "mean_sensing_proxy": 0.0033176675899857806,
+        "total_path_length_all_agents": 232.17905278314015
+      },
+      {
+        "evaluation_seed": 2003,
+        "collision_step_fraction": 0.25,
+        "boundary_step_fraction": 0.53,
+        "mean_collision_penalty": 12.5,
+        "mean_speed_cost": 0.09713493709832094,
+        "mean_communication": 0.6695234897815928,
+        "mean_sensing_proxy": 0.001623292818509006,
+        "total_path_length_all_agents": 193.78209354364256
+      },
+      {
+        "evaluation_seed": 2004,
+        "collision_step_fraction": 0.0,
+        "boundary_step_fraction": 0.305,
+        "mean_collision_penalty": 0.0,
+        "mean_speed_cost": 0.11483904649401593,
+        "mean_communication": 0.91214048874681,
+        "mean_sensing_proxy": 0.0017049760045647925,
+        "total_path_length_all_agents": 229.1838012146256
+      },
+      {
+        "evaluation_seed": 2005,
+        "collision_step_fraction": 0.115,
+        "boundary_step_fraction": 0.75,
+        "mean_collision_penalty": 5.75,
+        "mean_speed_cost": 0.10227516859897971,
+        "mean_communication": 0.7322082493748542,
+        "mean_sensing_proxy": 0.0012468885645427715,
+        "total_path_length_all_agents": 204.5445939587748
+      },
+      {
+        "evaluation_seed": 2006,
+        "collision_step_fraction": 0.02,
+        "boundary_step_fraction": 0.515,
+        "mean_collision_penalty": 1.0,
+        "mean_speed_cost": 0.09360628863742024,
+        "mean_communication": 0.7514346731624749,
+        "mean_sensing_proxy": 0.002104922422576184,
+        "total_path_length_all_agents": 186.8507417982965
+      },
+      {
+        "evaluation_seed": 2007,
+        "collision_step_fraction": 0.02,
+        "boundary_step_fraction": 0.585,
+        "mean_collision_penalty": 1.0,
+        "mean_speed_cost": 0.10041124207591341,
+        "mean_communication": 0.38239684020888265,
+        "mean_sensing_proxy": 0.0003127271516547844,
+        "total_path_length_all_agents": 200.81302187877895
+      },
+      {
+        "evaluation_seed": 2008,
+        "collision_step_fraction": 0.0,
+        "boundary_step_fraction": 0.55,
+        "mean_collision_penalty": 0.0,
+        "mean_speed_cost": 0.10952989331245996,
+        "mean_communication": 0.7545677425182008,
+        "mean_sensing_proxy": 0.0016293097654284025,
+        "total_path_length_all_agents": 218.61531656511147
+      },
+      {
+        "evaluation_seed": 2009,
+        "collision_step_fraction": 0.0,
+        "boundary_step_fraction": 0.585,
+        "mean_collision_penalty": 0.0,
+        "mean_speed_cost": 0.10665951419281784,
+        "mean_communication": 0.5138376745532625,
+        "mean_sensing_proxy": 0.0004927849317211373,
+        "total_path_length_all_agents": 212.7542454867393
+      },
+      {
+        "evaluation_seed": 2010,
+        "collision_step_fraction": 0.0,
+        "boundary_step_fraction": 0.56,
+        "mean_collision_penalty": 0.0,
+        "mean_speed_cost": 0.1067533524221209,
+        "mean_communication": 0.7689404197937563,
+        "mean_sensing_proxy": 0.0017846359635299547,
+        "total_path_length_all_agents": 212.69603901577273
+      }
+    ],
+    "means": {
+      "collision_step_fraction": 0.061,
+      "boundary_step_fraction": 0.5225,
+      "mean_collision_penalty": 3.05,
+      "mean_speed_cost": 0.10395343294076942,
+      "mean_communication": 0.6924150855719611,
+      "mean_sensing_proxy": 0.0014679539895935422,
+      "total_path_length_all_agents": 207.52599219804884
+    }
+  },
+  "interpretation": [
+    "These diagnostics preserve the predefined scenarios; no attractive trajectory was selected.",
+    "Lower return must be read with communication, sensing, collision and speed components.",
+    "Boundary clipping is an idealized environment event, not a real-flight success criterion.",
+    "One trained checkpoint per condition cannot establish training-seed robustness."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "figures": [
+    {
+      "path": "assets/historical/7bf3e179a2-0e9bd3118b108d6ba314ccc9174a4bad.png",
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/0e9bd3118b108d6ba314ccc9174a4bad.png",
+      "sha256": "67b9eb3ea847ea762c753bf461a0aa89c22e80976bd308778a5889c954f10371",
+      "status": "historical-figure",
+      "caption": "结果1-算法收敛性与底层网络对比图 / 0e9bd3118b108d6ba314ccc9174a4bad.png"
+    },
+    {
+      "path": "assets/historical/ad2262f3bf-3daf33394ca67ea0b17817207c8c3736.png",
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/3daf33394ca67ea0b17817207c8c3736.png",
+      "sha256": "56e981b3aa83e3057374857b6c28187ee389beaffaca073a36ac0e6a9a75840b",
+      "status": "historical-figure",
+      "caption": "结果1-算法收敛性与底层网络对比图 / 3daf33394ca67ea0b17817207c8c3736.png"
+    },
+    {
+      "path": "assets/historical/6884bc4c21-d31fed0dfd11712cd8594f19993b30f3.png",
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/d31fed0dfd11712cd8594f19993b30f3.png",
+      "sha256": "3c3fe3b39bb775dcde239b4508f8e5fa65d1251471f3a6c701605fd373ad38ef",
+      "status": "historical-figure",
+      "caption": "结果1-算法收敛性与底层网络对比图 / d31fed0dfd11712cd8594f19993b30f3.png"
+    },
+    {
+      "path": "assets/historical/ef50c50875-fbecdcec0e06f075ea5247dfc887687a.png",
+      "source": "实验结果截图/结果1-算法收敛性与底层网络对比图/fbecdcec0e06f075ea5247dfc887687a.png",
+      "sha256": "a7de1313a3a1224a1bc0d18ba5c5890e73d59845c2a1cca98157426beafc0ce1",
+      "status": "historical-figure",
+      "caption": "结果1-算法收敛性与底层网络对比图 / fbecdcec0e06f075ea5247dfc887687a.png"
+    },
+    {
+      "path": "assets/historical/375b762131-traj_ep200_pid24316.png",
+      "source": "实验结果截图/结果2-飞行轨迹与通感效能可视化图/Results_AA-MAPPO/traj_ep200_pid24316.png",
+      "sha256": "156190a850536eb4a7b570a828516e9373e780a3c2144df765c1a3017c851dce",
+      "status": "historical-figure",
+      "caption": "Results_AA-MAPPO / traj_ep200_pid24316.png"
+    },
+    {
+      "path": "assets/historical/094e4d72ca-traj_ep400_pid24316.png",
+      "source": "实验结果截图/结果2-飞行轨迹与通感效能可视化图/Results_AA-MAPPO/traj_ep400_pid24316.png",
+      "sha256": "0cadf631fa0935f4d528bf9c85c6615e0bddc5f8c297bbaa83bb76f65c6b95a2",
+      "status": "historical-figure",
+      "caption": "Results_AA-MAPPO / traj_ep400_pid24316.png"
+    },
+    {
+      "path": "assets/historical/a985df3c70-traj_ep600_pid24316.png",
+      "source": "实验结果截图/结果2-飞行轨迹与通感效能可视化图/Results_AA-MAPPO/traj_ep600_pid24316.png",
+      "sha256": "78755f7810580f58beaa415290c22c906d8b502c4eb03a64aef7eca86562641b",
+      "status": "historical-figure",
+      "caption": "Results_AA-MAPPO / traj_ep600_pid24316.png"
+    },
+    {
+      "path": "assets/historical/391c2be4e9-ep200_pid25708.png",
+      "source": "实验结果截图/结果2-飞行轨迹与通感效能可视化图/Results_Naive_Reward/ep200_pid25708.png",
+      "sha256": "c7ba5739bc083fd6a498f9e54af8c4d621ae6a6d8822ed552245178122a73a83",
+      "status": "historical-figure",
+      "caption": "Results_Naive_Reward / ep200_pid25708.png"
+    },
+    {
+      "path": "assets/historical/106be33256-ep400_pid25708.png",
+      "source": "实验结果截图/结果2-飞行轨迹与通感效能可视化图/Results_Naive_Reward/ep400_pid25708.png",
+      "sha256": "f73c538f14046f6e3a3a69e2f967f8ee423e86918869c8b5d45c2731ff1c9a74",
+      "status": "historical-figure",
+      "caption": "Results_Naive_Reward / ep400_pid25708.png"
+    },
+    {
+      "path": "assets/historical/7ab59d958d-ep600_pid25708.png",
+      "source": "实验结果截图/结果2-飞行轨迹与通感效能可视化图/Results_Naive_Reward/ep600_pid25708.png",
+      "sha256": "e4b53c651975b29504bf9d183918b118508ce164a8afa4f5150ca7ce3852ea92",
+      "status": "historical-figure",
+      "caption": "Results_Naive_Reward / ep600_pid25708.png"
+    },
+    {
+      "path": "assets/historical/aca2141319-ep200_pid21604.png",
+      "source": "实验结果截图/结果2-飞行轨迹与通感效能可视化图/Results_No_Clip_MAPPO/ep200_pid21604.png",
+      "sha256": "d874c19f823db5194f020063ee76bfb93a7fb04e6bcd526a009ed9dbc7fc202e",
+      "status": "historical-figure",
+      "caption": "Results_No_Clip_MAPPO / ep200_pid21604.png"
+    },
+    {
+      "path": "assets/historical/a66d401232-ep400_pid21604.png",
+      "source": "实验结果截图/结果2-飞行轨迹与通感效能可视化图/Results_No_Clip_MAPPO/ep400_pid21604.png",
+      "sha256": "a1158f3546b1e88ff65e514dece624cf81911ea45e9e6ebd0736d4ab1b7f4010",
+      "status": "historical-figure",
+      "caption": "Results_No_Clip_MAPPO / ep400_pid21604.png"
+    },
+    {
+      "path": "assets/historical/2fb41299e5-ep600_pid21604.png",
+      "source": "实验结果截图/结果2-飞行轨迹与通感效能可视化图/Results_No_Clip_MAPPO/ep600_pid21604.png",
+      "sha256": "4b5619c645596bd1eb8052fef339a888f1b33ad1304da738a64415c03682c6b5",
+      "status": "historical-figure",
+      "caption": "Results_No_Clip_MAPPO / ep600_pid21604.png"
+    },
+    {
+      "path": "assets/historical/48f564937d-ep200_pid3224.png",
+      "source": "实验结果截图/结果2-飞行轨迹与通感效能可视化图/Results_Standard_MAPPO/ep200_pid3224.png",
+      "sha256": "95ba573037d7173b85c1bc85bfab15f50421b7bbbcac13cca9333aaab521ecec",
+      "status": "historical-figure",
+      "caption": "Results_Standard_MAPPO / ep200_pid3224.png"
+    },
+    {
+      "path": "assets/historical/c1a9ab8b8b-ep400_pid3224.png",
+      "source": "实验结果截图/结果2-飞行轨迹与通感效能可视化图/Results_Standard_MAPPO/ep400_pid3224.png",
+      "sha256": "c3ba166af68491e2eaca316682433d5e6ff1150ae8d37a5fd1186dc04d65a8a5",
+      "status": "historical-figure",
+      "caption": "Results_Standard_MAPPO / ep400_pid3224.png"
+    },
+    {
+      "path": "assets/historical/783f60afbe-ep600_pid3224.png",
+      "source": "实验结果截图/结果2-飞行轨迹与通感效能可视化图/Results_Standard_MAPPO/ep600_pid3224.png",
+      "sha256": "bfc6f4c16db14e338f602bb877337b4a6eb32143334d414fbd2fdb48c6e4f8ce",
+      "status": "historical-figure",
+      "caption": "Results_Standard_MAPPO / ep600_pid3224.png"
+    }
+  ],
+  "notes": "原始截图；不由图片反推逐步轨迹或安全率。"
+}

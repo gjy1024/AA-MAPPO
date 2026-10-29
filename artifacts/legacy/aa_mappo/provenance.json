@@ -1,0 +1,18 @@
+{
+  "status": "historical-single-run",
+  "algorithm_label_from_directory": "6G_ISAC_Attention",
+  "seed": null,
+  "training_config_complete": false,
+  "source": {
+    "path": "实验结果截图/结果1-算法收敛性与底层网络对比图/全部结果细则/simple_spread/MyEnv/mappo/6G_ISAC_Attention/run1/logs/summary.json",
+    "sha256": "173ebc3d6e40fd85c9f7f4fdadc6e8b98269bfafeae94828a17ced482ded23fe",
+    "copies_found": 2,
+    "copies_identical": true
+  },
+  "notes": [
+    "Folder label is historical metadata, not a verification of the exact training architecture.",
+    "run1 does not identify a random seed.",
+    "Original architecture, all hyperparameters and correspondence to published figures still require author confirmation.",
+    "These checkpoints are not compatible with the maintained entity-token architecture."
+  ]
+}

@@ -1,0 +1,5 @@
+# Direct dependency versions used in the local Windows/Python 3.10 verification.
+# This is not a full transitive dependency lock file or a claim of bitwise reproducibility.
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==2.2.6
+torch==2.7.0+cpu

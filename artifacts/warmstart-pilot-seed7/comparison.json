@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "kind": "pilot-comparison",
+  "provenance": {
+    "status": "maintenance-pilot",
+    "training_steps": 0,
+    "training_seeds": [
+      7
+    ],
+    "evaluation_seeds": [
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010
+    ],
+    "config": "configs/pilot-long-rollout.json",
+    "notes": "示范预训练扩展，区别于原版AA-MAPPO；只用验证集诊断，非多训练种子定论；全部轨迹保留。"
+  },
+  "rows": [
+    {
+      "id": "short-training",
+      "label": "短训练基准",
+      "policy": "maintenance short-training baseline",
+      "training_seed": 7,
+      "training_steps": 512,
+      "metrics": {
+        "communication": 0.7735181441077307,
+        "sensing_proxy": 0.0015062321504370247,
+        "collision_episode_rate": 0.4,
+        "min_distance": 8.579171950318113,
+        "mean_return": -130.26640177497023,
+        "boundary_episode_rate": 1.0
+      },
+      "source": "artifacts\\warmstart-pilot-seed7\\baseline\\validation.json"
+    },
+    {
+      "id": "teacher",
+      "label": "局部环形停靠与排斥控制（未训练）",
+      "policy": "local-ring-repulsion-teacher",
+      "training_seed": 7,
+      "training_steps": 0,
+      "metrics": {
+        "communication": 2.3839546932758573,
+        "sensing_proxy": 0.012963276404149914,
+        "collision_episode_rate": 0.0,
+        "min_distance": 6.566083926962935,
+        "mean_return": 727.7879712739311,
+        "boundary_episode_rate": 0.0
+      },
+      "source": "artifacts\\warmstart-pilot-seed7\\teacher\\validation.json"
+    },
+    {
+      "id": "behavior-cloning",
+      "label": "示范预训练扩展（仅BC）",
+      "policy": "behavior-cloned local teacher; no PPO yet",
+      "training_seed": 7,
+      "training_steps": 0,
+      "metrics": {
+        "communication": 1.820513421557275,
+        "sensing_proxy": 0.007171235079560255,
+        "collision_episode_rate": 0.2,
+        "min_distance": 9.081453477223324,
+        "mean_return": -799.9580868945318,
+        "boundary_episode_rate": 0.0
+      },
+      "source": "artifacts\\warmstart-pilot-seed7\\bc\\validation.json"
+    }
+  ]
+}

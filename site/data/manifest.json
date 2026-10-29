@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "notes": "已接入四组历史日志及维护版运行；历史单次记录、教学示例、短训练验证与探索性实验分别标注。完整多种子性能实验仍待执行。",
+  "runs": [
+    {
+      "id": "teaching-demo",
+      "label": "规则控制教学演示",
+      "path": "data/demo.json",
+      "kind": "evaluation",
+      "status": "illustrative",
+      "description": "解释场景、物理指标与回放接口；不是训练后的AA-MAPPO策略。"
+    },
+    {
+      "id": "maintenance-smoke",
+      "label": "维护版短训练 · 实际评估回放",
+      "path": "data/maintenance-smoke.json",
+      "kind": "evaluation",
+      "status": "maintenance-smoke",
+      "description": "真实短训练输出，非完整复现实验；与历史权重和原论文结果分开。"
+    },
+    {
+      "id": "maintenance-pilot",
+      "label": "探索性改进 · 固定测试场景",
+      "path": "data/pilot-evaluation.json",
+      "kind": "evaluation",
+      "status": "maintenance-pilot",
+      "description": "新探索方案的实际轨迹；具体训练方法与预算见来源记录，非原论文结果。默认回放预先指定的首个测试场景，不挑选最好看的轨迹。"
+    },
+    {
+      "id": "ring-reference",
+      "label": "避碰环形规则参考 · 未训练",
+      "path": "data/ring-reference.json",
+      "kind": "evaluation",
+      "status": "maintenance-pilot",
+      "description": "相同环境的非学习控制参照，用于解释可达到的轨迹形态；不是AA-MAPPO训练结果。"
+    }
+  ],
+  "artifacts": [
+    {
+      "title": "四组历史训练日志",
+      "status": "historical-single-run",
+      "path": "data/legacy-training.json",
+      "description": "原始summary逐条转换，保留异常值；每组run1，种子与完整配置待核对。"
+    },
+    {
+      "title": "历史截图档案",
+      "status": "historical-figure",
+      "path": "data/historical-figures.json",
+      "description": "原始图像与源文件校验信息；不由静态图片推断碰撞率。"
+    },
+    {
+      "title": "24份历史Actor/Critic检查点",
+      "status": "historical-artifact",
+      "description": "在仓库artifacts/legacy保留；结构不兼容新的实体注意力网络，不加载为维护版模型。"
+    },
+    {
+      "title": "完整多种子消融",
+      "status": "pending",
+      "description": "提供四种注意力模式与五种子计划；尚未据短训练宣称完整实验通过。"
+    }
+  ],
+  "default_run": "maintenance-pilot"
+}

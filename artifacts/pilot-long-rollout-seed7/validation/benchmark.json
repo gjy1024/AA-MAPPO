@@ -1,0 +1,537 @@
+{
+  "schema_version": "1.0",
+  "kind": "paired-pilot-benchmark",
+  "created_at_utc": "2026-10-29T13:19:37.346121+00:00",
+  "status": "pilot; not a paper reproduction or a multi-training-seed significance test",
+  "protocol": {
+    "evaluation_seeds": [
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010
+    ],
+    "deterministic_policy": true,
+    "scenario_selection": "predefined seeds; every scenario retained",
+    "independent_training_runs_per_condition": 1,
+    "same_environment_reward_network_config": true,
+    "config_differences": {
+      "train_steps": {
+        "baseline": 512,
+        "candidate": 30000
+      },
+      "gae_lambda": {
+        "baseline": 0.95,
+        "candidate": 0.99
+      },
+      "rollout_steps": {
+        "baseline": 128,
+        "candidate": 512
+      },
+      "minibatch_size": {
+        "baseline": 64,
+        "candidate": 128
+      }
+    },
+    "uncertainty_unit": "evaluation scenarios, not independent training seeds",
+    "limitations": [
+      "Only one training seed per condition",
+      "Validation scenarios are not an untouched final test set",
+      "Safety measured at sampled states, not a hard guarantee",
+      "Sensing uses an SNR proxy, not localization RMSE or CRB"
+    ]
+  },
+  "baseline": {
+    "checkpoint": "artifacts\\maintenance-smoke-v2\\checkpoint.pt",
+    "checkpoint_sha256": "4341736b80f608794c72fa4f838b434d2a7ce7db1c5b4e88ec1aa7b6ac8f2035",
+    "trained_environment_steps": 512,
+    "training_seed": 7,
+    "summary": {
+      "episode_return_mean": -130.26640177497023,
+      "episode_return_std": 678.01796215505,
+      "communication_mean_mean": 0.7735181441077307,
+      "communication_mean_std": 0.14237932219562208,
+      "sensing_proxy_mean_mean": 0.0015062321504370247,
+      "sensing_proxy_mean_std": 0.0007318229021247846,
+      "speed_cost_mean_mean": 0.1004733680262844,
+      "speed_cost_mean_std": 0.0053548378824671014,
+      "min_distance_mean": 8.579171950318113,
+      "min_distance_std": 9.017700204661368,
+      "collision_episode_mean": 0.4,
+      "collision_episode_std": 0.5163977794943222,
+      "boundary_episode_mean": 1.0,
+      "boundary_episode_std": 0.0,
+      "evaluation_episodes": 10,
+      "independent_training_runs": 1,
+      "uncertainty_unit": "fixed evaluation scenarios of one checkpoint; not training seeds"
+    },
+    "replays": [
+      "baseline/seed-2001.json",
+      "baseline/seed-2002.json",
+      "baseline/seed-2003.json",
+      "baseline/seed-2004.json",
+      "baseline/seed-2005.json",
+      "baseline/seed-2006.json",
+      "baseline/seed-2007.json",
+      "baseline/seed-2008.json",
+      "baseline/seed-2009.json",
+      "baseline/seed-2010.json"
+    ]
+  },
+  "candidate": {
+    "checkpoint": "artifacts\\pilot-long-rollout-seed7\\checkpoint.pt",
+    "checkpoint_sha256": "ea8932121843698fa6904364eb5204844dcf677af5476f252649b99e8cb9fe2a",
+    "trained_environment_steps": 30000,
+    "training_seed": 7,
+    "summary": {
+      "episode_return_mean": -32.9398151408268,
+      "episode_return_std": 755.7779557583809,
+      "communication_mean_mean": 0.9537996444760919,
+      "communication_mean_std": 0.2512635811976351,
+      "sensing_proxy_mean_mean": 0.001932550054861248,
+      "sensing_proxy_mean_std": 0.0015222292169916527,
+      "speed_cost_mean_mean": 0.036753725666350205,
+      "speed_cost_mean_std": 0.004435003290000692,
+      "min_distance_mean": 12.584299989650884,
+      "min_distance_std": 8.033608855715256,
+      "collision_episode_mean": 0.1,
+      "collision_episode_std": 0.31622776601683794,
+      "boundary_episode_mean": 0.0,
+      "boundary_episode_std": 0.0,
+      "evaluation_episodes": 10,
+      "independent_training_runs": 1,
+      "uncertainty_unit": "fixed evaluation scenarios of one checkpoint; not training seeds"
+    },
+    "replays": [
+      "candidate/seed-2001.json",
+      "candidate/seed-2002.json",
+      "candidate/seed-2003.json",
+      "candidate/seed-2004.json",
+      "candidate/seed-2005.json",
+      "candidate/seed-2006.json",
+      "candidate/seed-2007.json",
+      "candidate/seed-2008.json",
+      "candidate/seed-2009.json",
+      "candidate/seed-2010.json"
+    ]
+  },
+  "comparisons": {
+    "episode_return": {
+      "preferred_direction": "higher",
+      "baseline_mean": -130.26640177497023,
+      "candidate_mean": -32.9398151408268,
+      "mean_delta_candidate_minus_baseline": 97.32658663414342,
+      "scenario_delta_std": 1075.0861515406912,
+      "better_scenarios": 7,
+      "tied_scenarios": 0,
+      "worse_scenarios": 3
+    },
+    "communication_mean": {
+      "preferred_direction": "higher",
+      "baseline_mean": 0.7735181441077307,
+      "candidate_mean": 0.9537996444760919,
+      "mean_delta_candidate_minus_baseline": 0.18028150036836127,
+      "scenario_delta_std": 0.2916529445388446,
+      "better_scenarios": 7,
+      "tied_scenarios": 0,
+      "worse_scenarios": 3
+    },
+    "sensing_proxy_mean": {
+      "preferred_direction": "higher",
+      "baseline_mean": 0.0015062321504370247,
+      "candidate_mean": 0.001932550054861248,
+      "mean_delta_candidate_minus_baseline": 0.0004263179044242234,
+      "scenario_delta_std": 0.0018952737435602117,
+      "better_scenarios": 6,
+      "tied_scenarios": 0,
+      "worse_scenarios": 4
+    },
+    "speed_cost_mean": {
+      "preferred_direction": "lower",
+      "baseline_mean": 0.1004733680262844,
+      "candidate_mean": 0.036753725666350205,
+      "mean_delta_candidate_minus_baseline": -0.06371964235993419,
+      "scenario_delta_std": 0.00772639617798014,
+      "better_scenarios": 10,
+      "tied_scenarios": 0,
+      "worse_scenarios": 0
+    },
+    "min_distance": {
+      "preferred_direction": "higher",
+      "baseline_mean": 8.579171950318113,
+      "candidate_mean": 12.584299989650884,
+      "mean_delta_candidate_minus_baseline": 4.0051280393327735,
+      "scenario_delta_std": 6.138720909744561,
+      "better_scenarios": 8,
+      "tied_scenarios": 0,
+      "worse_scenarios": 2
+    },
+    "collision_episode": {
+      "preferred_direction": "lower",
+      "baseline_mean": 0.4,
+      "candidate_mean": 0.1,
+      "mean_delta_candidate_minus_baseline": -0.3,
+      "scenario_delta_std": 0.6749485577105528,
+      "better_scenarios": 4,
+      "tied_scenarios": 5,
+      "worse_scenarios": 1
+    },
+    "boundary_episode": {
+      "preferred_direction": "lower",
+      "baseline_mean": 1.0,
+      "candidate_mean": 0.0,
+      "mean_delta_candidate_minus_baseline": -1.0,
+      "scenario_delta_std": 0.0,
+      "better_scenarios": 10,
+      "tied_scenarios": 0,
+      "worse_scenarios": 0
+    }
+  },
+  "paired_episodes": [
+    {
+      "evaluation_seed": 2001,
+      "baseline": {
+        "evaluation_seed": 2001,
+        "steps": 200,
+        "episode_return": -1949.9057129188247,
+        "communication_mean": 0.5342015882304486,
+        "sensing_proxy_mean": 0.0005894803140866073,
+        "speed_cost_mean": 0.09267818423323311,
+        "min_distance": 0.0,
+        "collision_episode": 1,
+        "boundary_episode": 1
+      },
+      "candidate": {
+        "evaluation_seed": 2001,
+        "steps": 200,
+        "episode_return": 168.37492156004586,
+        "communication_mean": 0.8014802900942,
+        "sensing_proxy_mean": 0.0008074922973791099,
+        "speed_cost_mean": 0.040354912031881233,
+        "min_distance": 5.232784753991848,
+        "collision_episode": 0,
+        "boundary_episode": 0
+      },
+      "delta_candidate_minus_baseline": {
+        "episode_return": 2118.2806344788705,
+        "communication_mean": 0.26727870186375136,
+        "sensing_proxy_mean": 0.0002180119832925026,
+        "speed_cost_mean": -0.05232327220135188,
+        "min_distance": 5.232784753991848,
+        "collision_episode": -1,
+        "boundary_episode": -1
+      }
+    },
+    {
+      "evaluation_seed": 2002,
+      "baseline": {
+        "evaluation_seed": 2002,
+        "steps": 200,
+        "episode_return": 148.08577614024406,
+        "communication_mean": 0.7654909525302509,
+        "sensing_proxy_mean": 0.0008036585625139153,
+        "speed_cost_mean": 0.10542792808042244,
+        "min_distance": 2.7144891105054256,
+        "collision_episode": 0,
+        "boundary_episode": 1
+      },
+      "candidate": {
+        "evaluation_seed": 2002,
+        "steps": 200,
+        "episode_return": -2177.2340370955403,
+        "communication_mean": 1.3680063099119935,
+        "sensing_proxy_mean": 0.0053124323950922096,
+        "speed_cost_mean": 0.035419734898913556,
+        "min_distance": 1.8161717222057299,
+        "collision_episode": 1,
+        "boundary_episode": 0
+      },
+      "delta_candidate_minus_baseline": {
+        "episode_return": -2325.3198132357843,
+        "communication_mean": 0.6025153573817426,
+        "sensing_proxy_mean": 0.004508773832578294,
+        "speed_cost_mean": -0.07000819318150889,
+        "min_distance": -0.8983173882996958,
+        "collision_episode": 1,
+        "boundary_episode": -1
+      }
+    },
+    {
+      "evaluation_seed": 2003,
+      "baseline": {
+        "evaluation_seed": 2003,
+        "steps": 200,
+        "episode_return": 196.1274227550491,
+        "communication_mean": 0.8722548398020209,
+        "sensing_proxy_mean": 0.0021451187198277674,
+        "speed_cost_mean": 0.10612959800955192,
+        "min_distance": 15.40442465889403,
+        "collision_episode": 0,
+        "boundary_episode": 1
+      },
+      "candidate": {
+        "evaluation_seed": 2003,
+        "steps": 200,
+        "episode_return": 125.82177744836179,
+        "communication_mean": 0.5977963994290925,
+        "sensing_proxy_mean": 0.000754932111710451,
+        "speed_cost_mean": 0.04418072335832859,
+        "min_distance": 20.476124563458367,
+        "collision_episode": 0,
+        "boundary_episode": 0
+      },
+      "delta_candidate_minus_baseline": {
+        "episode_return": -70.30564530668732,
+        "communication_mean": -0.27445844037292844,
+        "sensing_proxy_mean": -0.0013901866081173163,
+        "speed_cost_mean": -0.06194887465122333,
+        "min_distance": 5.071699904564337,
+        "collision_episode": 0,
+        "boundary_episode": -1
+      }
+    },
+    {
+      "evaluation_seed": 2004,
+      "baseline": {
+        "evaluation_seed": 2004,
+        "steps": 200,
+        "episode_return": 129.404485392945,
+        "communication_mean": 0.6762044550811221,
+        "sensing_proxy_mean": 0.000720817158957338,
+        "speed_cost_mean": 0.10126374401213102,
+        "min_distance": 5.640742873865315,
+        "collision_episode": 0,
+        "boundary_episode": 1
+      },
+      "candidate": {
+        "evaluation_seed": 2004,
+        "steps": 200,
+        "episode_return": 171.03592058673854,
+        "communication_mean": 0.8020746839083182,
+        "sensing_proxy_mean": 0.0008571032410886025,
+        "speed_cost_mean": 0.032605405083485375,
+        "min_distance": 11.551920185783903,
+        "collision_episode": 0,
+        "boundary_episode": 0
+      },
+      "delta_candidate_minus_baseline": {
+        "episode_return": 41.63143519379355,
+        "communication_mean": 0.125870228827196,
+        "sensing_proxy_mean": 0.00013628608213126457,
+        "speed_cost_mean": -0.06865833892864565,
+        "min_distance": 5.911177311918588,
+        "collision_episode": 0,
+        "boundary_episode": -1
+      }
+    },
+    {
+      "evaluation_seed": 2005,
+      "baseline": {
+        "evaluation_seed": 2005,
+        "steps": 200,
+        "episode_return": 246.9124013343269,
+        "communication_mean": 1.0640352476214716,
+        "sensing_proxy_mean": 0.002754087938623877,
+        "speed_cost_mean": 0.10488203481222508,
+        "min_distance": 14.025581433716283,
+        "collision_episode": 0,
+        "boundary_episode": 1
+      },
+      "candidate": {
+        "evaluation_seed": 2005,
+        "steps": 200,
+        "episode_return": 200.7898460106019,
+        "communication_mean": 0.9083299302318807,
+        "sensing_proxy_mean": 0.0012344508379872024,
+        "speed_cost_mean": 0.02782578397759023,
+        "min_distance": 16.802977041509276,
+        "collision_episode": 0,
+        "boundary_episode": 0
+      },
+      "delta_candidate_minus_baseline": {
+        "episode_return": -46.12255532372498,
+        "communication_mean": -0.15570531738959092,
+        "sensing_proxy_mean": -0.0015196371006366747,
+        "speed_cost_mean": -0.07705625083463485,
+        "min_distance": 2.777395607792993,
+        "collision_episode": 0,
+        "boundary_episode": -1
+      }
+    },
+    {
+      "evaluation_seed": 2006,
+      "baseline": {
+        "evaluation_seed": 2006,
+        "steps": 200,
+        "episode_return": 143.1035573037155,
+        "communication_mean": 0.7013992103459461,
+        "sensing_proxy_mean": 0.0011254980317798218,
+        "speed_cost_mean": 0.09843122700535108,
+        "min_distance": 26.640474579079804,
+        "collision_episode": 0,
+        "boundary_episode": 1
+      },
+      "candidate": {
+        "evaluation_seed": 2006,
+        "steps": 200,
+        "episode_return": 275.6445663476415,
+        "communication_mean": 1.1317834258524093,
+        "sensing_proxy_mean": 0.0028485698372843022,
+        "speed_cost_mean": 0.03841757784263147,
+        "min_distance": 18.171260221870252,
+        "collision_episode": 0,
+        "boundary_episode": 0
+      },
+      "delta_candidate_minus_baseline": {
+        "episode_return": 132.541009043926,
+        "communication_mean": 0.4303842155064632,
+        "sensing_proxy_mean": 0.0017230718055044805,
+        "speed_cost_mean": -0.060013649162719604,
+        "min_distance": -8.469214357209552,
+        "collision_episode": 0,
+        "boundary_episode": -1
+      }
+    },
+    {
+      "evaluation_seed": 2007,
+      "baseline": {
+        "evaluation_seed": 2007,
+        "steps": 200,
+        "episode_return": -553.0224818617116,
+        "communication_mean": 0.8550886810116364,
+        "sensing_proxy_mean": 0.0023484072246363306,
+        "speed_cost_mean": 0.10504181278382763,
+        "min_distance": 1.5580125305342634,
+        "collision_episode": 1,
+        "boundary_episode": 1
+      },
+      "candidate": {
+        "evaluation_seed": 2007,
+        "steps": 200,
+        "episode_return": 152.63362672614244,
+        "communication_mean": 0.7381508316560624,
+        "sensing_proxy_mean": 0.0006053173498139162,
+        "speed_cost_mean": 0.03551443300674136,
+        "min_distance": 2.1024079830683036,
+        "collision_episode": 0,
+        "boundary_episode": 0
+      },
+      "delta_candidate_minus_baseline": {
+        "episode_return": 705.6561085878541,
+        "communication_mean": -0.11693784935557394,
+        "sensing_proxy_mean": -0.0017430898748224143,
+        "speed_cost_mean": -0.06952737977708626,
+        "min_distance": 0.5443954525340402,
+        "collision_episode": -1,
+        "boundary_episode": -1
+      }
+    },
+    {
+      "evaluation_seed": 2008,
+      "baseline": {
+        "evaluation_seed": 2008,
+        "steps": 200,
+        "episode_return": 142.5428838054084,
+        "communication_mean": 0.6795431318784382,
+        "sensing_proxy_mean": 0.0013633093761949416,
+        "speed_cost_mean": 0.10315965047089083,
+        "min_distance": 16.660411689692555,
+        "collision_episode": 0,
+        "boundary_episode": 1
+      },
+      "candidate": {
+        "evaluation_seed": 2008,
+        "steps": 200,
+        "episode_return": 177.04848621377803,
+        "communication_mean": 0.808067212442742,
+        "sensing_proxy_mean": 0.001154767098521806,
+        "speed_cost_mean": 0.038301491226032505,
+        "min_distance": 25.10358930111337,
+        "collision_episode": 0,
+        "boundary_episode": 0
+      },
+      "delta_candidate_minus_baseline": {
+        "episode_return": 34.50560240836964,
+        "communication_mean": 0.12852408056430387,
+        "sensing_proxy_mean": -0.0002085422776731355,
+        "speed_cost_mean": -0.06485815924485833,
+        "min_distance": 8.443177611420815,
+        "collision_episode": 0,
+        "boundary_episode": -1
+      }
+    },
+    {
+      "evaluation_seed": 2009,
+      "baseline": {
+        "evaluation_seed": 2009,
+        "steps": 200,
+        "episode_return": 123.15593900548559,
+        "communication_mean": 0.7915277405994948,
+        "sensing_proxy_mean": 0.0016741706391572068,
+        "speed_cost_mean": 0.09316510948778785,
+        "min_distance": 1.6905318925727353,
+        "collision_episode": 1,
+        "boundary_episode": 1
+      },
+      "candidate": {
+        "evaluation_seed": 2009,
+        "steps": 200,
+        "episode_return": 268.7184280497044,
+        "communication_mean": 1.1221920497494904,
+        "sensing_proxy_mean": 0.0025997777129935086,
+        "speed_cost_mean": 0.03857768080031964,
+        "min_distance": 16.275462945348192,
+        "collision_episode": 0,
+        "boundary_episode": 0
+      },
+      "delta_candidate_minus_baseline": {
+        "episode_return": 145.5624890442188,
+        "communication_mean": 0.33066430914999556,
+        "sensing_proxy_mean": 0.0009256070738363018,
+        "speed_cost_mean": -0.05458742868746821,
+        "min_distance": 14.584931052775456,
+        "collision_episode": -1,
+        "boundary_episode": -1
+      }
+    },
+    {
+      "evaluation_seed": 2010,
+      "baseline": {
+        "evaluation_seed": 2010,
+        "steps": 200,
+        "episode_return": 70.93171129365959,
+        "communication_mean": 0.7954355939764768,
+        "sensing_proxy_mean": 0.0015377735385924407,
+        "speed_cost_mean": 0.09455439136742286,
+        "min_distance": 1.4570507343206982,
+        "collision_episode": 1,
+        "boundary_episode": 1
+      },
+      "candidate": {
+        "evaluation_seed": 2010,
+        "steps": 200,
+        "episode_return": 307.7683127442578,
+        "communication_mean": 1.26011531148473,
+        "sensing_proxy_mean": 0.003150657666741371,
+        "speed_cost_mean": 0.03633951443757812,
+        "min_distance": 8.310301178159605,
+        "collision_episode": 0,
+        "boundary_episode": 0
+      },
+      "delta_candidate_minus_baseline": {
+        "episode_return": 236.8366014505982,
+        "communication_mean": 0.4646797175082533,
+        "sensing_proxy_mean": 0.0016128841281489305,
+        "speed_cost_mean": -0.058214876929844735,
+        "min_distance": 6.853250443838907,
+        "collision_episode": -1,
+        "boundary_episode": -1
+      }
+    }
+  ]
+}

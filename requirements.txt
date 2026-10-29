@@ -1,0 +1,3 @@
+# Maintained implementation only. Historical light_mappo uses additional legacy dependencies.
+numpy>=1.24,<3
+torch>=2.4,<3

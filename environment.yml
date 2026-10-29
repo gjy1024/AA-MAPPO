@@ -1,0 +1,9 @@
+name: aa-mappo-research
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - numpy==2.2.6
+      - torch==2.7.0

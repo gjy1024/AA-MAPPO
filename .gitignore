@@ -1,0 +1,23 @@
+# Generated Python/build/editor files. Do not ignore all dotfiles: CI must be tracked.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.DS_Store
+.vscode/
+.idea/
+.env
+.env.*
+# New full training runs are opt-in artifacts; the curated provenance set is tracked.
+runs/
+results/
+tmp/
+.qa/
+.test_tmp/
+artifacts/maintenance-runs/
+# Lossless per-scenario JSON archive and index are tracked instead of duplicates.
+artifacts/**/seed-*.json

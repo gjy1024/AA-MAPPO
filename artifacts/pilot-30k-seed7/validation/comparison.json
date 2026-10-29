@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "kind": "pilot-comparison",
+  "provenance": {
+    "status": "maintenance-pilot",
+    "notes": "探索性训练，非多训练种子定论；验证集用于诊断，全部场景保留，未使用最终测试集。",
+    "training_steps": 30000,
+    "training_seeds": [
+      7
+    ],
+    "evaluation_seeds": [
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010
+    ],
+    "config": "configs/maintenance.json",
+    "config_differences": {
+      "train_steps": {
+        "baseline": 512,
+        "candidate": 30000
+      }
+    },
+    "benchmark_report": "artifacts/pilot-30k-seed7/validation/benchmark.json"
+  },
+  "rows": [
+    {
+      "id": "baseline",
+      "label": "维护版短训练（512步）",
+      "policy": "maintained MAPPO entity-attention policy",
+      "training_seed": 7,
+      "training_steps": 512,
+      "metrics": {
+        "communication": 0.7735181441077307,
+        "sensing_proxy": 0.0015062321504370247,
+        "collision_episode_rate": 0.4,
+        "min_distance": 8.579171950318113,
+        "mean_return": -130.26640177497023,
+        "boundary_episode_rate": 1.0
+      },
+      "source": "artifacts/pilot-30k-seed7/validation/baseline.json"
+    },
+    {
+      "id": "candidate",
+      "label": "探索性延长训练（30,000步）",
+      "policy": "maintained MAPPO entity-attention policy",
+      "training_seed": 7,
+      "training_steps": 30000,
+      "metrics": {
+        "communication": 0.6924150855719611,
+        "sensing_proxy": 0.0014679539895935422,
+        "collision_episode_rate": 0.5,
+        "min_distance": 5.526605701870598,
+        "mean_return": -462.94858968189084,
+        "boundary_episode_rate": 1.0
+      },
+      "source": "artifacts/pilot-30k-seed7/validation/candidate.json"
+    },
+    {
+      "id": "stationary",
+      "label": "stationary-zero-acceleration",
+      "policy": "stationary-zero-acceleration",
+      "training_seed": null,
+      "training_steps": 0,
+      "metrics": {
+        "communication": 0.8358240919841929,
+        "sensing_proxy": 0.0012952766821241525,
+        "collision_episode_rate": 0.0,
+        "min_distance": 26.791253596836885,
+        "mean_return": 193.07035203932185,
+        "boundary_episode_rate": 0.0
+      },
+      "source": "artifacts/baselines/stationary.json"
+    },
+    {
+      "id": "rule",
+      "label": "round-robin-pd-rule",
+      "policy": "round-robin-pd-rule",
+      "training_seed": null,
+      "training_steps": 0,
+      "metrics": {
+        "communication": 1.9646362881210628,
+        "sensing_proxy": 0.008779614101409388,
+        "collision_episode_rate": 0.2,
+        "min_distance": 4.716165921408839,
+        "mean_return": 368.09452605703405,
+        "boundary_episode_rate": 0.0
+      },
+      "source": "artifacts/baselines/rule.json"
+    }
+  ]
+}

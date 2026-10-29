@@ -1,0 +1,40 @@
+{
+  "implementation": "maintained-reference-v0.2",
+  "seed": 7,
+  "requested_environment_steps": 30000,
+  "paper_reproduction": false,
+  "historical_weights_compatible": false,
+  "python": "3.10.5",
+  "torch": "2.7.0+cpu",
+  "numpy": "2.2.6",
+  "device": "cpu",
+  "actor_parameters": 21636,
+  "critic_parameters": 21569,
+  "notes": "Maintenance implementation with explicit assumptions; short runs verify execution only.",
+  "source_sha256": {
+    "__init__.py": "9130280caf3ccd1690e62a544a27b7dc92a4b1f17e053151c539b15c4c9bc659",
+    "__main__.py": "1d97a81cfba208a6cd366c7f0a8f9b6388403a5b05d932410ce0e698d9c77f10",
+    "config.py": "47767513c7f869b0bd52ed76e81b97a8a9a59e9c395ae8f0cee45538462231e2",
+    "environment.py": "c2c31f94c80381906d53c1cf928aa1602a61575ae39006dc667bed2e62f11550",
+    "models.py": "e8a7fa507e9851cf26747e696eae493c83b0e932f826b495a06a43490b14148b",
+    "ppo.py": "db1fdc140fc0742956aeb09c9078ab625f1deee283b542eb33a1a8f91d7d2f80"
+  },
+  "started_at_utc": "2026-10-29T13:08:47.572183+00:00",
+  "command": [
+    "D:\\大三上学习资料\\学习资料\\AA-MAPPO-workbench\\aamappo\\__main__.py",
+    "train",
+    "--config",
+    "configs/maintenance.json",
+    "--seed",
+    "7",
+    "--steps",
+    "30000",
+    "--out",
+    "artifacts/pilot-30k-seed7"
+  ],
+  "platform": "Windows-10-10.0.26200-SP0",
+  "git_commit": null,
+  "actual_environment_steps": 30000,
+  "training_seconds": 58.24609030003194,
+  "completed_episodes": 150
+}

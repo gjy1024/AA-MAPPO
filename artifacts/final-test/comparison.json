@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "kind": "pilot-comparison",
+  "provenance": {
+    "status": "maintenance-pilot",
+    "training_steps": 30000,
+    "training_seeds": [
+      7
+    ],
+    "evaluation_seeds": [
+      3001,
+      3002,
+      3003,
+      3004,
+      3005,
+      3006,
+      3007,
+      3008,
+      3009,
+      3010,
+      3011,
+      3012,
+      3013,
+      3014,
+      3015,
+      3016,
+      3017,
+      3018,
+      3019,
+      3020
+    ],
+    "config": "configs/pilot-long-rollout.json",
+    "notes": "独立测试20个固定场景；学习策略只有1个训练seed，不能说明多训练seed稳定性。最小间距为各回合最小值的均值；碰撞与触边为含事件回合比例。规则控制单独标注未训练。"
+  },
+  "rows": [
+    {
+      "id": "short",
+      "label": "维护版短训练 · 512步",
+      "policy": "维护版短训练 · 512步",
+      "training_seed": 7,
+      "training_steps": 512,
+      "metrics": {
+        "communication": 0.760460785781944,
+        "sensing_proxy": 0.002090546141135152,
+        "collision_episode_rate": 0.3,
+        "min_distance": 8.049234348201612,
+        "mean_return": -293.0479106795239,
+        "boundary_episode_rate": 1.0
+      },
+      "source": "artifacts/final-test/short.json"
+    },
+    {
+      "id": "long-rollout",
+      "label": "改进PPO · 30,000步",
+      "policy": "改进PPO · 30,000步",
+      "training_seed": 7,
+      "training_steps": 30000,
+      "metrics": {
+        "communication": 1.1406027587442495,
+        "sensing_proxy": 0.0035164980965642564,
+        "collision_episode_rate": 0.0,
+        "min_distance": 11.858012480075292,
+        "mean_return": 291.02105753073704,
+        "boundary_episode_rate": 0.0
+      },
+      "source": "artifacts/final-test/long-rollout.json"
+    },
+    {
+      "id": "stationary",
+      "label": "静止参考 · 未训练",
+      "policy": "静止参考 · 未训练",
+      "training_seed": null,
+      "training_steps": 0,
+      "metrics": {
+        "communication": 1.0406671224495576,
+        "sensing_proxy": 0.003377587870449763,
+        "collision_episode_rate": 0.0,
+        "min_distance": 24.000033432323136,
+        "mean_return": 275.6851818989068,
+        "boundary_episode_rate": 0.0
+      },
+      "source": "artifacts/final-test/stationary.json"
+    },
+    {
+      "id": "ring-teacher",
+      "label": "避碰环形规则参考 · 未训练",
+      "policy": "避碰环形规则参考 · 未训练",
+      "training_seed": null,
+      "training_steps": 0,
+      "metrics": {
+        "communication": 2.440565009224217,
+        "sensing_proxy": 0.013153121542789064,
+        "collision_episode_rate": 0.0,
+        "min_distance": 6.097537382184406,
+        "mean_return": 742.2953620960163,
+        "boundary_episode_rate": 0.0
+      },
+      "source": "artifacts/final-test/ring-teacher.json"
+    }
+  ]
+}

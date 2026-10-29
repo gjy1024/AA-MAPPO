@@ -1,0 +1,9 @@
+{
+  "source_sha256": {
+    "artifacts\\final-test\\long-rollout.json": "752b96e73ac32fa1b843c6c37d8d339c20aed800b8c07727ad6c9d0226f2bfa1",
+    "artifacts\\pilot-long-rollout-seed7\\metrics.jsonl": "8fb8f4010d474a7c30dd59ed53f40724b3cb12510c6d48c07fe22058f003adaf"
+  },
+  "trajectory_smoothing": false,
+  "diagnostic_moving_average_window": 5,
+  "notes": "Replay only the first evaluation scene; no confidence intervals inferred from a single training run."
+}

@@ -1,0 +1,2 @@
+# Optional: publication/report figure rendering, independent of training.
+matplotlib>=3.7,<4

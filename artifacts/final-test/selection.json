@@ -1,0 +1,36 @@
+{
+  "selected_before_test": true,
+  "selected_at_utc": "2026-10-29T13:29:20.892209+00:00",
+  "selected_checkpoint": "artifacts/pilot-long-rollout-seed7/checkpoint.pt",
+  "checkpoint_sha256": "ea8932121843698fa6904364eb5204844dcf677af5476f252649b99e8cb9fe2a",
+  "selection": "Among learned candidates: collision episode rate, then boundary episode rate, then return on validation seeds 2001..2010",
+  "test_seeds": [
+    3001,
+    3002,
+    3003,
+    3004,
+    3005,
+    3006,
+    3007,
+    3008,
+    3009,
+    3010,
+    3011,
+    3012,
+    3013,
+    3014,
+    3015,
+    3016,
+    3017,
+    3018,
+    3019,
+    3020
+  ],
+  "training_seed": 7,
+  "validation_results": {
+    "default_30k_collision_rate": 0.5,
+    "long_rollout_30k_collision_rate": 0.1,
+    "behavior_cloning_collision_rate": 0.2
+  },
+  "notes": "BC did not qualify for PPO fine tuning. Rule teacher is a separate non-learning reference."
+}
